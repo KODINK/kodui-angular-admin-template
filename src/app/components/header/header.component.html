@@ -1,0 +1,24 @@
+<div id="navigation" class="navigation" [ngClass]="{pinHeader: global.pinNavigation}">
+    <div class="header-left-side">
+        <span (click)="toggleHeader()"><i class="fa fa-bars"></i></span>
+        <h4 class="page-header">{{title}} Dashboard</h4>
+    </div>
+
+    <div class="header-right-side">
+        <a class="icon"><i class="fa fa-search"></i></a>
+        <a class="icon"><i class="fa fa-cog"></i></a>
+
+        <div class="dropdown">
+            <a>
+                <div>
+                    <p>SuperUser</p>
+                    <p>Administrator</p>
+                </div>
+            </a>
+            <img src="https://pp.userapi.com/c543109/v543109422/579ae/pbUgj0S_OTI.jpg" alt="logo" width="25px" />
+        </div>
+        <div class="dropdown-content" (click)="logout()">
+            <a><i class="fas fa-door-open"></i></a>
+        </div>
+    </div>
+</div>

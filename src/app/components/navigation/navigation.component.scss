@@ -1,0 +1,73 @@
+@import "../app/app.component";
+
+:host {
+  & > .navigation {
+    z-index: 20;
+    background: #1a161f;
+    overflow: hidden;
+    position: fixed;
+    width: calc(2rem + 40px);
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all .4s;
+    & > div {
+      display: block;
+      padding: 0 0 40px;
+      & > a {
+        font-size: 14px;
+        color: #ffffff;
+      }
+    }
+    & > a {
+      display: flex;
+      text-decoration: none;
+      font-family: Open Sans,sans-serif;
+      line-height: 1.5;
+      font-size: .875rem;
+      font-weight: 500;
+      color: #ffffff;
+      outline: none;
+      padding: .5rem 1rem;
+      & > span {
+        padding: 9px 0;
+        margin-right: 20px;
+        flex: 1;
+      }
+      & > button {
+        background: transparent;
+        font-size: 18px;
+        color: white;
+        width: 40px;
+        min-width: 40px;
+        padding: 0;
+        margin-right: 20px;
+      }
+      & > img {
+        width: 20px;
+      }
+      &:first-child {
+        padding: 20px 1rem;
+      }
+    }
+    & > span {
+      margin-left: 10px;
+    }
+    & > .active, & > a:hover {
+      & > button {
+        color: #ce435b;
+      }
+    }
+    &:hover {
+      left: 0;
+      width: 240px;
+    }
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+  & > .pin {
+    display: block;
+    width: 240px;
+  }
+}

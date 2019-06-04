@@ -1,0 +1,31 @@
+<div class="auth-container">
+    <div class="auth-block">
+
+        <span class="title">Welcome back</span>
+        <p>Sign in to continue using admin app</p>
+
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
+            <!--<mat-form-field class="example-full-width">-->
+                <!--<input matInput placeholder="Username" formControlName="username">-->
+            <!--</mat-form-field>-->
+
+            <!--<mat-form-field class="example-full-width">-->
+                <!--<input matInput type="password" placeholder="Password" formControlName="password">-->
+                <!--<mat-error *ngIf="error">-->
+                    <!--{{error}}-->
+                <!--</mat-error>-->
+            <!--</mat-form-field>-->
+
+            <a class="link"> Forgot your password</a>
+            <button class="default-btn">LOg IN</button>
+
+            <p class="error">{{errorMessage}}</p>
+        </form>
+
+
+        <p>Don't have account? <a class="link">Register here</a></p>
+    </div>
+
+</div>
+
+

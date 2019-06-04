@@ -1,0 +1,92 @@
+@import "../../components/app/app.component";
+
+:host {
+  height: 100vh;
+  display: flex;
+
+  & > .auth-container {
+    flex: 1;
+    background-size: cover;
+    background: url(../../../assets/images/auth.jpg) no-repeat;
+    display: flex;
+
+    & > .auth-block {
+      width: 400px;
+      margin-left: 10%;
+      background-color: #fbebe1;
+      display: flex;
+      flex-direction: column;
+      padding: 50px;
+
+      & > .title {
+        margin-top: 30%;
+        letter-spacing: 0;
+        text-align: left;
+        font-size: 31px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+      }
+
+      & > p {
+        margin: 0 0 40px;
+        text-align: left;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        letter-spacing: 0.3px;
+
+        &:last-child {
+          margin: auto 0 0;
+        }
+      }
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    .df-input {
+      padding: 6px 10px;
+      border: 2px solid #d6bba7;
+      flex: 1;
+      outline: none;
+      margin: 0 0 20px;
+      height: 24px;
+      background: #fff1e8;
+      color: black;
+      font-weight: bold;
+      text-transform: none;
+    }
+
+    a {
+      margin-bottom: 20px;
+    }
+
+    button {
+      width: 120px;
+    }
+
+    .error {
+      padding: 5px 0;
+      color: #ff3248;
+      font-family: "adobe-caslon-pro", Garamond, Times New Roman, sans-serif;
+      letter-spacing: 1.4px;
+      display: block;
+    }
+
+    .success {
+      padding: 5px 0;
+      color: #56735e;
+      font-family: "adobe-caslon-pro", Garamond, Times New Roman, sans-serif;
+      letter-spacing: 1.4px;
+      display: block;
+    }
+  }
+
+  a {
+    cursor: pointer;
+  }
+}
+
+.auth-block {
+
+}

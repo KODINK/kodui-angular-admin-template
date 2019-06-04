@@ -1,0 +1,76 @@
+@import "../../components/app/app.component";
+
+:host {
+  & > div {
+    @extend .pageContainer;
+    & > .right, & > .left {
+      display: inline-block;
+      vertical-align: top;
+    }
+    & > .right {
+      width: calc(70% - 20px);
+      padding-right: 20px;
+    }
+    & > .left {
+      width: 30%;
+      & > .social {
+        display: flex;
+        flex-wrap: wrap;
+        & > div {
+          width: 49%;
+          padding: 0;
+          & > div {
+            color: white;
+            padding: 20px;
+            display: block;
+            text-align: center;
+            font-size: 30px
+          }
+          & > p {
+            padding: 10px 20px;
+            margin: 0;
+            display: block;
+            text-align: center;
+            font-family: adobe-caslon-pro,Garamond,Times New Roman,sans-serif;
+            color: #858585;
+            text-transform: uppercase;
+            font-size: 18px;
+            & > span {
+              color: black;
+              font-weight: 900;
+            }
+          }
+        }
+
+        & > .facebook {
+          margin-right: 2%;
+          & > div {
+            background: #3b5998;
+          }
+        }
+        & > .google {
+          & > div {
+            background: #d0422a;
+          }
+        }
+        & > .other {
+          & > div {
+            background: #147270;
+          }
+        }
+      }
+    }
+  }
+  .block {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    & > a {
+      text-transform: uppercase;
+      display: inline-block;
+      margin-top: 10px;
+    }
+  }
+
+}

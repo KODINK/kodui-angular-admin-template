@@ -1,0 +1,22 @@
+@import "../app/app.component";
+
+:host {
+    & > div {
+        padding: 10px 90px;
+        font-size: 12px;
+        color: #3b3b3b;
+        width: auto;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition: left .3s ease;
+        border-top: 1px solid #e5e3dd;
+        font-family: "Segoe UI",Arial,sans-serif;
+        display: flex;
+        background: white;
+        & > span:first-child {
+            flex: 1;
+        }
+    }
+}
